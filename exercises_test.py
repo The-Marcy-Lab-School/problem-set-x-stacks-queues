@@ -1,7 +1,6 @@
 from exercises import *
 import pytest
 
-@pytest.mark.skip(reason="Delete this once you've implemented the Stack class")
 def test_stack():
     stack = Stack()
     assert stack.is_empty()
@@ -15,7 +14,6 @@ def test_stack():
     assert stack.size() == 2
     assert stack.pop() == 'c'
 
-@pytest.mark.skip(reason="Delete this once you've implemented the Queue class")
 def test_queue():
     queue = Queue()
     assert queue.is_empty()
@@ -27,7 +25,6 @@ def test_queue():
     assert queue.dequeue() == '1st'
     assert queue.size() == 2
 
-@pytest.mark.skip(reason="Delete this once you've implemented the Deque class")
 def test_deque():
     deque = Deque()
     assert deque.is_empty()

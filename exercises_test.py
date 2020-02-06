@@ -41,7 +41,7 @@ def test_deque():
     assert deque.remove_rear() == 8.4
     assert deque.remove_front() == True
 
-@pytest.mark.skip(reason="Delete this once implemented")
+ @pytest.mark.skip(reason="Delete this once implemented")
 def test_is_balanced_parentheses():
     assert is_balanced_parentheses('()()') == True
     assert is_balanced_parentheses('()((') == False

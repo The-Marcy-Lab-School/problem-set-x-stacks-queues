@@ -5,8 +5,10 @@ Respond to short response questions in clear, concise sentences directly within 
 
 ### Short Response Questions
 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
+Answer: A stack is an ordered collection of items where items are added to and removed the end called the "top". **Last in First Out ** is a method of processing the data in which the last items entered are the first to be removed. You can imagine a stack of pancakes stacked on top of each other.
 
 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
+Answer: A queue is an ordered collection of items where the addition of new items happens at one end, called the "rear", and the removal of existing items occurs at the other end, commonly called the "front". ** First In First Out** is a method of processing the data in which the first item entered the queue is the first to be to removed. You can imagine a lunch line, first come first serve.
 
 ### Coding Exercises
 Answer the following questions in `exercises.py`. Run unit test with the `pytest` command. Ensure all tests are passing before submitting this problem set.

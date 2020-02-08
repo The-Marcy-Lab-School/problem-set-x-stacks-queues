@@ -5,8 +5,10 @@ Respond to short response questions in clear, concise sentences directly within 
 
 ### Short Response Questions
 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
+    - A stack is a linear abstract data structure for storing elements in order. Addition and removals in a stack follow the principle of **LIFO**, i.e., the *last* element *in* is the *first* one *out*. This means insertions AND deletions happen at the same 'end of the line'.
 
 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
+    - A queue is another linear data structure where insertions happen at one, the *rear*, and deletions happen at the opposite end, the *front*. This ordering principle is also called **FIFO** because elements are removed in the order in which they were inserted.
 
 ### Coding Exercises
 Answer the following questions in `exercises.py`. Run unit test with the `pytest` command. Ensure all tests are passing before submitting this problem set.

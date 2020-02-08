@@ -6,7 +6,11 @@ Respond to short response questions in clear, concise sentences directly within 
 ### Short Response Questions
 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
 
+    A stack is an abstract data structure with a last in first out design. Essentially the first thing you add to a stack can only be accessed after you've moved past everything that was added after it. Items added are always removed in reverse order of its entry.
+
 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
+
+    A queue is an abstract data structure with a first in first out design. It's more like a tunnel than anything, you can only add to the back and only remove from the front. Items added are always removed in the same order of its entry.
 
 ### Coding Exercises
 Answer the following questions in `exercises.py`. Run unit test with the `pytest` command. Ensure all tests are passing before submitting this problem set.

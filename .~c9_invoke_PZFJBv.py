@@ -113,11 +113,12 @@ class Deque:
 
 # Question 4
 def is_balanced_parentheses(string):
-    # if len(string) % 2 != 0:
-    #     return False
+    if len(string) % 2 != 0:
+        return False
+
+    stack = Stack()
     starting = ['{', '[', '(']
     ending = ['}', ']', ')']
-    stack = Stack()
 
     for sym in string:
         if sym in starting:
@@ -131,8 +132,8 @@ def is_balanced_parentheses(string):
 
     if stack.size() == 0:
         return True
-    else:
-        return False
+
+print(is_balanced_parentheses('()'))
 
 # Question 5
 def is_palindrome(string):
@@ -150,8 +151,5 @@ def is_palindrome(string):
 # Question 6
 def decimal_to_binary(num):
     result = ''
-    if num > 1:
-        result += decimal_to_binary(num // 2)
-    result += f'{num % 2}'
-    return result
+
 

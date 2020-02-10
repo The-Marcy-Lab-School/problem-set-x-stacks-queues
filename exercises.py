@@ -103,22 +103,6 @@ class Deque:
 
 # Question 4
 def is_balanced_parentheses():
-    
-    # starting = set('([{')
-    # matches = set([('(', ')'), ('[', ']'), ('{', '}')])
-    # stack = []
-    # P
-    # This function will take in a string that contains a number of brackets, it that checks that each openning bracket or parenthesis has it's own closings tag. Thus being balanced. As all things should be...
-    # E print(is_balanced_parentheses("[('(', ')'))")
-    #   print(is_balanced_parentheses("[(', (', ')'))")
-    #   print(is_balanced_parentheses("[(', ')]"))
-    # D dictionaries and strings
-    # A
-    # Create dictionary to record brackets count
-    # loop through string and record each instance of a type of bracket.
-    # loop through dictionary and check if every entry/property is is even. (entry % 2 == 1)
-    # If any entry is odd then return "false".
-    # Note this algorithm doesnt check if they are in the right order like a coding IDE. 
 
 
 def check_is_balanced_parentheses(data)
@@ -160,5 +144,14 @@ def is_palindrome(ourString):
     return ourString == reversedWord
 
 # Question 6
-def decimal_to_binary():
-    pass
+def decimal_to_binary(decimal):
+    
+    tempStack = Stack()
+    while decimal > 0:
+        tempStack.push(decimal % 2)
+        decimal = decimal // 2
+        
+        string = ""
+        while not tempStack.is_empty():
+            string += str(tempStack.pop())
+        return string

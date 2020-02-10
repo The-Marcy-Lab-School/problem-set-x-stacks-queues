@@ -102,31 +102,22 @@ class Deque:
         return self.data == []
 
 # Question 4
-def is_balanced_parentheses():
-
-
-def check_is_balanced_parentheses(data)
+def is_balanced_parentheses(string):
     tempStack = Stack()
-    i = 0 #Index Control
-    b = true
-    while i < len(data) and b:
-        if curl = data[i]
-
-s = Stack()
     balanced = True
-    index = 0
-    while index < len(string) and balanced:
-        symbol = string[index]
-        if symbol in "({[":
-            s.push(symbol)
+    i = 0
+    while i < len(string) and balanced:
+        curl = string[i]
+        if curl in '({[':
+            tempStack.push(curl)
         else:
-            if s.is_empty():
+            if tempStack.is_empty():
                 balanced = False
-            else:
-                s.pop()
-        index += 1
-    if balanced and s.is_empty():
-            return True
+            else: 
+                tempStack.pop()
+        i += 1
+    if balanced and tempStack.is_empty():
+        return True 
     return False
 
 

@@ -48,40 +48,46 @@ class Stack:
 # Question 2
 class Queue:
     def __init__(self):
-        self.front = None
-        self.back = None
-        self.count = 0
-    
-    def is_empty(self):
-        return self.count == 0
+        self.items = []
         
-    def enqueue(self, data):
-        if self.is_empty():
-            self.front = Node(data)
-            self.back = Node(data)
-        else:
-            current = self.back
-            self.back = Node(data)
-            current.next = self.back
-        self.count += 1
-        return self.count
+    def is_empty(self):
+        return self.items == []
+        
+    def enqueue(self, items):
+        self.items.insert(0, item)
         
     def dequeue(self):
-        if self.is_empty():
-            raise IndexError("This queue is empty")
-        current = self.front
-        self.front = self.front.next
-        self.count -= 1
-        return current.data
-        
+        return self.items.pop()
+    
     def size(self):
-        return self.count
+        return len(self.items)
         
 
 
 # Question 3
 class Deque:
     """Implements a custom Deque class"""
+    def __init__(self):
+        self.items =[]
+    
+    def is_empty(self):
+        return self.items == []
+    
+    def add_front(self, item):
+        self.items.append(item)
+    
+    def add_rear(self, item):
+        self.items.insert(0, item)
+        
+    def remove_front(self):
+        return self.items.pop()
+    
+    def remove_rear(self):
+        return self.items.pop(0)
+        
+    def size(self):
+        return len(self.items)
+        
 
 # Question 4
 def is_balanced_parentheses(string):

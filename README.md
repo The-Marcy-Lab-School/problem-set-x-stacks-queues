@@ -6,10 +6,11 @@ Respond to short response questions in clear, concise sentences directly within 
 ### Short Response Questions
 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
 - A stack is a linear data strructure with an ordered collection of items where the addition and removal of new items takes place at the same end. This end is referred to the top and the opposite of the top is the base. 
-- LIFO refers to the order in which items in the stack are added and removed. Items in a stack that are closer to the base have been in the stack longest. The more recently added items are first to be removed. 
+- LIFO stands for 'last in first out' and refers to the order in which items in the stack are added and removed. Items in a stack that are closer to the base have been in the stack longest. The more recently added items are first to be removed. 
 
 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
-- A queue is a linear data structure that is an ordered collection of items 
+- A queue is a linear data structure that is an ordered collection of items, where the addition of new items happens at one end called the 'rear' and the removal of existing items occurs at the oher end referred to as the front.
+- FIFO stands for 'first in first out' and refers to the way the most recently added item in the queue must wait at the end of the collection. The items in the front of the collection have been there the longest.  
 
 ### Coding Exercises
 Answer the following questions in `exercises.py`. Run unit test with the `pytest` command. Ensure all tests are passing before submitting this problem set.

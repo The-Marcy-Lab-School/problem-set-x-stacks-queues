@@ -39,12 +39,12 @@ class Stack:
         return self.count
 
 
-ourStack = Stack()
-ourStack.push('a')
-ourStack.push('b')
-ourStack.push('c')
-print(ourStack.pop())
-print(ourStack.size())
+# ourStack = Stack()
+# ourStack.push('a')
+# ourStack.push('b')
+# ourStack.push('c')
+# print(ourStack.pop())
+# print(ourStack.size())
 
 # Question 2
 class Queue:

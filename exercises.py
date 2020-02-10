@@ -57,7 +57,7 @@ class Queue2:
         self.back = None
         self.count = 0
         
-    def enqueue(self, item):
+    def enqueue(self, data):
         if self.is_empty():
             self.front = Node(data)
             self.back = Node(data)
@@ -92,7 +92,7 @@ class Deque:
     def is_empty(self):
         return self.items == []
 
-    def add_front(self, item): #Front is from the right
+    def add_front(self, item): 
         self.items.append(item)
 
     def add_rear(self, item):
@@ -106,21 +106,44 @@ class Deque:
 
     def size(self):
         return len(self.items)
-# Question 4
-def is_balanced_parentheses():
-    pass
+def is_balanced_parentheses(string):
+
+    start = ['{', '[', '(']
+    end = ['}', ']', ')']
+    stack = Stack()
+
+    for symbol in string:
+        if symbol in start:
+            stack.push(symbol)
+        elif symbol in end:
+            position = end.index(symbol)
+            if (stack.size() > 0) and (start[position] == stack.peek()):
+                stack.pop()
+            else:
+                return False
+
+    if stack.size() == 0:
+        return True
+    else:
+        return False
 
 # Question 5
 def is_palindrome(string):
+    reverse = ''
     stack = Stack()
-    newStr = ""
+
     for letter in string:
         stack.push(letter)
-    while not stack.is_empty():
-        newStr += stack.pop()
-    return string == newStr
+    for _ in string:
+        reverse += stack.pop()
+
+    return reverse == string
 
 
 # Question 6
-def decimal_to_binary():
-    pass
+def decimal_to_binary(num):
+    result = ''
+    if num > 1:
+        result += decimal_to_binary(num // 2)
+    result += f'{num % 2}'
+    return result

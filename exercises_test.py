@@ -1,7 +1,6 @@
 from exercises import *
 import pytest
 
-@pytest.mark.skip(reason="Delete this once you've implemented the Stack class")
 def test_stack():
     stack = Stack()
     assert stack.is_empty()

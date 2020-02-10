@@ -6,8 +6,14 @@ Respond to short response questions in clear, concise sentences directly within 
 ### Short Response Questions
 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
 
+    A stack is a data structure that follows the LIFO principle. This essentially means you deal with the most recent items added to the stack
+    as a means of insertion or deletion. You can think of it like a adding and removing people from a line at the movies.
+    
 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
 
+    A queue is a data structure that follows the FIFO principle. This means that the addition of new elements is added to the end of collections of data,
+    while removing elements would happen from the other end, at the front.
+    
 ### Coding Exercises
 Answer the following questions in `exercises.py`. Run unit test with the `pytest` command. Ensure all tests are passing before submitting this problem set.
 

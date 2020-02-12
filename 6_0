@@ -1,0 +1,22 @@
+# Unit 6 Lesson 0 Problem Set
+
+0. Describe, in as much detail as you can, what happens when you open up Google Chrome, type "marcylabschool.org" into the address bar, and press enter.
+        1.Your request is sent to the devices network interface.
+        2.The DNS server then converts the URL to an IP Address that can be understood by a server.
+        3.The server accepts the request and sends a response over the internet to your network interface.
+        4.The browser displays the response.
+1. HTTP is a "stateless" protocol - what does this mean?
+        A "stateless" protocol is when each request/response pair is completely independent to the previous one.
+2. Given that HTTP is a stateless protocol, how do we build "stateful" web applications.
+        Developers would use tricks to allow their application to be 'stateful' such as providing each user a unique id and with every request made the unique id goes along with it.
+
+3. What is the difference between HTTP and HTTPS?
+        HTTPS is more secured
+4. Security is an important concept for web applications. What are two ways we can try to prevent a user's session from being highjacked?
+        Content Security Policy (CSP) and Certificate Transfer (CT). CSP only allow CSS and Javascript from certain domains you choose to run on your website. Helps protect against cross-site-scripting attacks. Certificate Transparency is a system that can help find malicious SSL certificates issued for your site. This header gives the browser a URL to use to report bad certificates to you.
+5. What is the Same Origin Policy? What about CORS? How are they related?
+        The same origin policy is one way browsers protect you from malicious Javascript code. CORS stands for Cross Origin Resource Sharing. They are related because Cross-origin requests are not allowed by default because of the same origin policy.
+6. Using cURL, make requests to http://www.reddit.com/r/programming and http://www.reddit.com/r/programming/.json from the command line. What differences do you notice between the two different response bodies? Why is this be significant?
+
+7. What are request and response _headers_? Why are they important?
+        Request headers give more information about the client and the resource to be fetched. Response headers offer more information about the resource being sent back. They are important because for example we had a client that is requesting information but he is an English speaker when he makes the request if the server is located in an area where English is not the first language, it wouldn't be useful to send him data he cannot read or understand. By using headers when request data we send bits of information about us so when the server responds, it responds back to us in a way we can understand. This is important because it enables the client and server to communicate to each other in a better way.

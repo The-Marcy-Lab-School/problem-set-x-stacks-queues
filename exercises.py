@@ -97,6 +97,7 @@ def decimal_to_binary(num):
     while num > 0:
         r = num % 2
         stack.push(r)
+        num = num // 2
         
     binStr = ''
     while stack:

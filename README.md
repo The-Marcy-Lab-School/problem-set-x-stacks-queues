@@ -5,8 +5,9 @@ Respond to short response questions in clear, concise sentences directly within 
 
 ### Short Response Questions
 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
-
+    A stack is an ordered collection of items that follows the principal of Last In First Out. Meaning that the addition of new items and the removal of items already in the collection happen at the same end.
 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
+    A queue is an ordered collection of items that follows the principal of First In First Out. This means that addition happens at the "rear" of the collection and removal of items in the collection occurs at the "front" of the collection.
 
 ### Coding Exercises
 Answer the following questions in `exercises.py`. Run unit test with the `pytest` command. Ensure all tests are passing before submitting this problem set.

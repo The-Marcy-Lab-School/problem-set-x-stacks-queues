@@ -1,3 +1,4 @@
+import pytest
 from exercises import *
 
 def test_stack():
@@ -48,7 +49,8 @@ def test_is_palindrome():
     assert is_palindrome('racecar')
     assert not is_palindrome('palindrome')
     assert not is_palindrome('08052020')
-    assert is_palindrom('02022020')
+    assert is_palindrome('02022020')
+    
 
 def test_decimal_to_binary():
     assert decimal_to_binary(7) == '111'

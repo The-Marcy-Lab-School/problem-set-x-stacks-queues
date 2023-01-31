@@ -9,9 +9,9 @@ Use Test Driven Development to guide you. For JavaScript, run `npm install` to d
 
 ## Short Response Questions
 
-#### 1. What is a stack? (_Be sure to use the term **LIFO** in your response._)
+#### 1. What is a stack? What are the essential operations for a stack? (_Be sure to use the term **LIFO** in your response._)
 
-#### 2. What is a queue? (_Be sure to use the term **FIFO** in your response._)
+#### 2. What is a queue? What are the essential operations for a queue? (_Be sure to use the term **FIFO** in your response._)
 
 ## Class Coding Exercises
 

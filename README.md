@@ -47,7 +47,7 @@ These are common interview problems and you can find an algorithm to solve them 
   '12345'   => not a palindrome
   ```
 
-#### 5. Write a function, `decimal_to_binary`, that takes an integer input and returns its binary representation as a string of digits.
+#### 5. Write a function, `decimal_to_binary`, that takes an integer input and returns its binary representation as a string of digits. Do not use any methods that convert numbers to binary (such as `num.toString(2)`)
 
   Examples:
   ```
